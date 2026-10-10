@@ -1,0 +1,22 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#071b2d,#123b52,#0b6b70);color:#fff;min-height:100vh}
+button{cursor:pointer;border:0}.container{max-width:1100px;margin:auto;padding:24px}.screen{min-height:100vh;display:flex;align-items:center;justify-content:center}
+.card{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:24px;padding:30px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.hidden{display:none!important}.start{text-align:center;max-width:700px}.logo{font-size:80px}h1,h2{margin-top:0}
+.primary{background:#35e0b5;color:#062b2c;padding:15px 25px;border-radius:14px;font-size:18px;font-weight:bold;margin-top:15px}
+.topbar{display:flex;gap:15px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.stat{background:rgba(255,255,255,.12);padding:10px 14px;border-radius:12px}
+.progress{height:12px;background:rgba(255,255,255,.15);border-radius:20px;overflow:hidden;flex:1}.progress div{height:100%;background:#35e0b5;width:0%;transition:.4s}
+.game-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.question{min-height:300px}.option{display:block;width:100%;text-align:left;margin:10px 0;padding:14px;border-radius:12px;background:#f5f7fa;color:#10202d;font-size:16px}
+.option:hover{background:#d8fff5}.option.correct{background:#63e6be}.option.wrong{background:#ff9d9d}.feedback{margin-top:15px;padding:15px;border-radius:12px;background:rgba(0,0,0,.2)}
+.microscope{position:relative;min-height:500px;background:rgba(255,255,255,.07);border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.15)}
+.microscope-title{text-align:center;margin:15px}.scope{position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:260px;height:390px}
+.part{position:absolute;background:#b9d0d8;border:3px solid #45616b;color:#10202d;font-weight:bold;font-size:12px;display:flex;align-items:center;justify-content:center;text-align:center;transition:.2s}
+.part.filled{background:#35e0b5;border-color:#073d3c}.ocular{width:55px;height:75px;left:100px;top:0;border-radius:10px}
+.tubo{width:65px;height:110px;left:95px;top:60px;border-radius:8px}.revolver{width:120px;height:45px;left:70px;top:145px;border-radius:15px}
+.objetiva{width:45px;height:80px;left:40px;top:175px;border-radius:8px}.platina{width:150px;height:30px;left:55px;top:235px;border-radius:8px}
+.presilhas{width:70px;height:25px;left:95px;top:220px;border-radius:8px}.braco{width:45px;height:145px;left:175px;top:135px;border-radius:25px;transform:rotate(-18deg)}
+.condensador{width:70px;height:35px;left:95px;top:265px;border-radius:50%}.iluminacao{width:55px;height:35px;left:103px;top:300px;border-radius:50%}
+.parafuso{width:38px;height:38px;left:190px;top:155px;border-radius:50%}.foco{width:35px;height:35px;left:190px;top:205px;border-radius:50%}
+.base{width:210px;height:45px;left:25px;top:330px;border-radius:50% 50% 18px 18px}.pieces{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}
+.piece{padding:10px;background:#f5f7fa;color:#10202d;border-radius:10px;text-align:center;font-size:12px;font-weight:bold;cursor:grab}.piece.used{opacity:.35;cursor:default}
+.instructions{font-size:14px;opacity:.9}.final{text-align:center;max-width:700px}.badge{font-size:60px}
+@media(max-width:800px){.game-grid{grid-template-columns:1fr}.pieces{grid-template-columns:repeat(2,1fr)}}

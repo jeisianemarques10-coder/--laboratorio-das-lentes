@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratório das Lentes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="startScreen" class="screen"><div class="card start"><div class="logo">🔬</div><h1>Laboratório das Lentes</h1>
+<p>Resolva os desafios de Física e monte um microscópio peça por peça!</p>
+<p><b>Objetivo:</b> aprender sobre lentes, microscopia, foco, aumento e partes do microscópio.</p>
+<button class="primary" onclick="startGame()">Começar o laboratório</button></div></section>
+
+<section id="gameScreen" class="hidden"><div class="container">
+<div class="topbar"><div class="stat">⭐ Pontos: <span id="score">0</span></div><div class="stat">✅ <span id="correct">0</span></div><div class="stat">❌ <span id="wrong">0</span></div><div class="progress"><div id="progressBar"></div></div></div>
+<div class="game-grid">
+<div class="card question"><div id="questionNumber"></div><h2 id="questionText"></h2><div id="options"></div><div id="feedback" class="feedback hidden"></div><button id="nextBtn" class="primary hidden" onclick="nextQuestion()">Próximo desafio</button></div>
+<div class="card"><h2 class="microscope-title">🧩 Monte o microscópio</h2><p class="instructions">Depois de acertar uma questão, uma peça será liberada. Arraste-a para a posição correspondente.</p>
+<div class="microscope"><div class="scope">
+<div class="part ocular" data-part="ocular">Ocular</div><div class="part tubo" data-part="tubo">Tubo</div><div class="part revolver" data-part="revolver">Revólver</div><div class="part objetiva" data-part="objetiva">Objetiva</div><div class="part platina" data-part="platina">Platina</div><div class="part presilhas" data-part="presilhas">Presilhas</div><div class="part braco" data-part="braco">Braço</div><div class="part condensador" data-part="condensador">Condensador</div><div class="part iluminacao" data-part="iluminacao">Iluminação</div><div class="part parafuso" data-part="parafuso">Parafuso</div><div class="part foco" data-part="foco">Foco</div><div class="part base" data-part="base">Base</div>
+</div></div><div id="pieces" class="pieces"></div></div></div></div></section>
+
+<section id="finalScreen" class="screen hidden"><div class="card final"><div class="badge">🎉🔬</div><h1>Microscópio montado!</h1><p>Parabéns! Você concluiu o Laboratório das Lentes.</p>
+<h2>Pontuação: <span id="finalScore"></span></h2><p>Acertos: <b id="finalCorrect"></b> | Erros: <b id="finalWrong"></b></p>
+<p>Um microscópio óptico composto utiliza um sistema de lentes. A objetiva forma e amplia a imagem do objeto, enquanto a ocular amplia novamente essa imagem para que ela seja observada pelo olho. O foco e a iluminação são essenciais para obter uma imagem nítida.</p>
+<button class="primary" onclick="location.reload()">Jogar novamente</button></div></section>
+
+<script src="script.js" defer></script>
+</body>
+</html>
